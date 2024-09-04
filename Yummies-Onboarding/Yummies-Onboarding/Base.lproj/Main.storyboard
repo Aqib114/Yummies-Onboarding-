@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Onboarding View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="OnboardingViewController" customModule="Yummies_Onboarding" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <pageControl opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="MsQ-05-cwu">
+                                <rect key="frame" x="138" y="700.33333333333337" width="116" height="25.666666666666629"/>
+                                <color key="pageIndicatorTintColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="currentPageIndicatorTintColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </pageControl>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFill" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="Hyf-Zm-7pN">
+                                <rect key="frame" x="0.0" y="59" width="393" height="602.33333333333337"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="J1q-ts-i8W">
+                                    <size key="itemSize" width="390" height="596"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFill" reuseIdentifier="OnboardingCollectionViewCell" id="yl2-qP-P8o" customClass="OnboardingCollectionViewCell" customModule="Yummies_Onboarding" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="3.3333333333333335" width="390" height="596"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="Rqd-0U-hyb">
+                                            <rect key="frame" x="0.0" y="0.0" width="390" height="596"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Nfj-yc-Rxa">
+                                                    <rect key="frame" x="0.0" y="0.0" width="390" height="432"/>
+                                                </imageView>
+                                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="uN6-gl-TuI">
+                                                    <rect key="frame" x="16" y="442" width="358" height="138"/>
+                                                    <subviews>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Quick Delivery at your Doorstep" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0Sk-4C-YfS">
+                                                            <rect key="frame" x="0.0" y="0.0" width="358" height="81.333333333333329"/>
+                                                            <fontDescription key="fontDescription" name="DevanagariSangamMN-Bold" family="Devanagari Sangam MN" pointSize="30"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Home Delivery and Online Reservations for Resturants and cafe" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kpv-29-gD4">
+                                                            <rect key="frame" x="0.0" y="97.333333333333371" width="358" height="40.666666666666657"/>
+                                                            <fontDescription key="fontDescription" name="DevanagariSangamMN" family="Devanagari Sangam MN" pointSize="15"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
+                                                    <constraints>
+                                                        <constraint firstItem="0Sk-4C-YfS" firstAttribute="leading" secondItem="uN6-gl-TuI" secondAttribute="leading" id="Dwi-KO-UsI"/>
+                                                        <constraint firstItem="Kpv-29-gD4" firstAttribute="leading" secondItem="uN6-gl-TuI" secondAttribute="leading" id="LmW-XN-7dk"/>
+                                                        <constraint firstAttribute="trailing" secondItem="Kpv-29-gD4" secondAttribute="trailing" id="Lxy-IX-Fpa"/>
+                                                        <constraint firstAttribute="trailing" secondItem="0Sk-4C-YfS" secondAttribute="trailing" id="aDc-em-ZW8"/>
+                                                        <constraint firstItem="0Sk-4C-YfS" firstAttribute="top" secondItem="uN6-gl-TuI" secondAttribute="top" id="aED-5Q-eKn"/>
+                                                        <constraint firstAttribute="bottom" secondItem="Kpv-29-gD4" secondAttribute="bottom" id="jyU-W2-jVp"/>
+                                                    </constraints>
+                                                </stackView>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="trailing" secondItem="Nfj-yc-Rxa" secondAttribute="trailing" id="77d-ys-b6G"/>
+                                                <constraint firstItem="uN6-gl-TuI" firstAttribute="top" secondItem="Nfj-yc-Rxa" secondAttribute="bottom" constant="10" id="K7R-nD-0tQ"/>
+                                                <constraint firstItem="Nfj-yc-Rxa" firstAttribute="top" secondItem="Rqd-0U-hyb" secondAttribute="top" id="MIV-iS-duO"/>
+                                                <constraint firstItem="Nfj-yc-Rxa" firstAttribute="leading" secondItem="Rqd-0U-hyb" secondAttribute="leading" id="bs6-a6-lAS"/>
+                                                <constraint firstAttribute="trailing" secondItem="uN6-gl-TuI" secondAttribute="trailing" constant="16" id="nlJ-Fo-oMK"/>
+                                                <constraint firstAttribute="bottom" secondItem="uN6-gl-TuI" secondAttribute="bottom" constant="16" id="uKs-CJ-NvQ"/>
+                                                <constraint firstItem="uN6-gl-TuI" firstAttribute="leading" secondItem="Rqd-0U-hyb" secondAttribute="leading" constant="16" id="zlC-Zw-XFM"/>
+                                            </constraints>
+                                        </collectionViewCellContentView>
+                                        <size key="customSize" width="390" height="596"/>
+                                        <connections>
+                                            <outlet property="slideDescriptionLbl" destination="Kpv-29-gD4" id="ZSy-i2-jgu"/>
+                                            <outlet property="slideImageView" destination="Nfj-yc-Rxa" id="kDB-xr-xYa"/>
+                                            <outlet property="slideTitleLbl" destination="0Sk-4C-YfS" id="Z61-3A-AOj"/>
+                                        </connections>
+                                    </collectionViewCell>
+                                </cells>
+                            </collectionView>
+                            <button opaque="NO" contentMode="scaleAspectFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vys-go-f6j">
+                                <rect key="frame" x="120" y="734" width="152" height="37"/>
+                                <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" name="DevanagariSangamMN-Bold" family="Devanagari Sangam MN" pointSize="18"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="Next">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="nextBtnClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Xpt-rJ-1d4"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="MsQ-05-cwu" secondAttribute="trailing" constant="139" id="Df3-4H-jgU"/>
+                            <constraint firstItem="MsQ-05-cwu" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="138" id="QiG-Eu-lug"/>
+                            <constraint firstItem="Vys-go-f6j" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="120" id="RLB-r0-U6I"/>
+                            <constraint firstItem="Hyf-Zm-7pN" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="Thg-Md-sMm"/>
+                            <constraint firstItem="Hyf-Zm-7pN" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="VtR-3R-NSb"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Vys-go-f6j" secondAttribute="trailing" constant="121" id="YEj-86-Llm"/>
+                            <constraint firstItem="MsQ-05-cwu" firstAttribute="top" secondItem="Hyf-Zm-7pN" secondAttribute="bottom" constant="39" id="fWg-Ty-rJ0"/>
+                            <constraint firstItem="Vys-go-f6j" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" constant="-47" id="iXe-lf-H1x"/>
+                            <constraint firstItem="Vys-go-f6j" firstAttribute="top" secondItem="MsQ-05-cwu" secondAttribute="bottom" constant="8" id="lBs-dw-OKs"/>
+                            <constraint firstItem="Hyf-Zm-7pN" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="u8L-OY-2O6"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="collectionView" destination="Hyf-Zm-7pN" id="bkn-nO-Vg3"/>
+                        <outlet property="nextBtn" destination="Vys-go-f6j" id="nXw-Pz-SJP"/>
+                        <outlet property="pageControl" destination="MsQ-05-cwu" id="bOF-xB-Cjz"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="127.48091603053435" y="-27.464788732394368"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
