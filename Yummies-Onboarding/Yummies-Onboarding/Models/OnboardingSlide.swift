@@ -1,4 +1,3 @@
-
 import UIKit
 
 // MARK: --- Making structure in which slides data is available

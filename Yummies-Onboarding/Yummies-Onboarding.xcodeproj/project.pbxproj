@@ -62,12 +62,10 @@
 		BAE4F83E2C88648000BC1F04 /* Yummies-Onboarding */ = {
 			isa = PBXGroup;
 			children = (
-				BAE4F8542C8864AB00BC1F04 /* Views */,
 				BAE4F8532C8864A500BC1F04 /* Models */,
-				BAE4F83F2C88648000BC1F04 /* AppDelegate.swift */,
-				BAE4F8412C88648000BC1F04 /* SceneDelegate.swift */,
+				BAE4F8542C8864AB00BC1F04 /* Views */,
+				BAE4F85F2C88907700BC1F04 /* Resources */,
 				BAE4F8452C88648000BC1F04 /* Main.storyboard */,
-				BAE4F8482C88648300BC1F04 /* Assets.xcassets */,
 				BAE4F84A2C88648300BC1F04 /* LaunchScreen.storyboard */,
 				BAE4F84D2C88648300BC1F04 /* Info.plist */,
 			);
@@ -93,11 +91,29 @@
 		BAE4F8552C8864B500BC1F04 /* OnBoarding  */ = {
 			isa = PBXGroup;
 			children = (
-				BAE4F8562C88688600BC1F04 /* OnboardingViewController.swift */,
 				BAE4F85A2C88728F00BC1F04 /* OnboardingCollectionViewCell.swift */,
-				BAE4F85C2C88844600BC1F04 /* CollectionViewCell.swift */,
+				BAE4F8562C88688600BC1F04 /* OnboardingViewController.swift */,
+				BAE4F85E2C88903100BC1F04 /* Custom Collection Cell */,
 			);
 			path = "OnBoarding ";
+			sourceTree = "<group>";
+		};
+		BAE4F85E2C88903100BC1F04 /* Custom Collection Cell */ = {
+			isa = PBXGroup;
+			children = (
+				BAE4F85C2C88844600BC1F04 /* CollectionViewCell.swift */,
+			);
+			path = "Custom Collection Cell";
+			sourceTree = "<group>";
+		};
+		BAE4F85F2C88907700BC1F04 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				BAE4F8482C88648300BC1F04 /* Assets.xcassets */,
+				BAE4F8412C88648000BC1F04 /* SceneDelegate.swift */,
+				BAE4F83F2C88648000BC1F04 /* AppDelegate.swift */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

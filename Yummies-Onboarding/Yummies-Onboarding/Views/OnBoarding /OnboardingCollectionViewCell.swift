@@ -1,10 +1,3 @@
-//
-//  OnboardingCollectionViewCell.swift
-//  Yummies-Onboarding
-//
-//  Created by Mapple.pk on 04/09/2024.
-//
-
 import UIKit
 
 class OnboardingCollectionViewCell: UICollectionViewCell {
@@ -13,13 +6,12 @@ class OnboardingCollectionViewCell: UICollectionViewCell {
     @IBOutlet weak var slideTitleLbl: UILabel!
     @IBOutlet weak var slideImageView: UIImageView!
     
-   
     // MARK: --- Function setup to set slides data e.g images, title, description
-    func setup(_ slide : OnboardingSlide){
+    func setup(_ slide : OnboardingSlide)
+    {
         slideImageView.image = slide.image ?? nil
         slideTitleLbl.text = slide.title
         slideDescriptionLbl.text = slide.description
-        
     }
 }
 
